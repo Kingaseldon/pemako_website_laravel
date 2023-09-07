@@ -1,0 +1,34 @@
+/* ----------------------------------------------------------------
+			[ All Css Plugins & Helper Classes File ]
+-----------------------------------------------------------------*/
+
+/* == bootstrap == */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css");
+/* @import url("plugins/bootstrap.min.css"); */
+
+/* == owl.carousel == */
+@import url("https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css");
+/* @import url("plugins/owl.carousel.min.css"); */
+@import url("plugins/owl.theme.default.min.css");
+
+@import url("plugins/datepicker.css");
+
+/* == animate css == */
+/* @import url("plugins/animate.min.css"); */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.0/animate.min.css");
+
+/* == themify & flaticon icons ==*/
+@import url("plugins/themify-icons.css");
+@import url("plugins/flaticon.css");
+
+/* == magnific-popup gallery  == */
+@import url("plugins/magnific-popup.min.css");
+@import url("https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css");
+
+
+
+/* == Vegas Slider == */
+@import url("plugins/vegas.slider.min.css");
+
+@import url("main.css");
+@import url("util.css");

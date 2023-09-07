@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap" rel="stylesheet">
+  <link href=https://live.ipms247.com/themes/reservation/css/bookingbtn/resui_bookingbox.css rel="stylesheet" type="text/css" />
+  <link href=https://live.ipms247.com/themes/reservation/css/bookingbtn/resui_datepicker.css rel="stylesheet" type="text/css" />
+  <script src=https://live.ipms247.com/themes/reservation/js/bookingbtn/jquery-a.l.d.js type="text/javascript"></script>
+  <script src=https://live.ipms247.com/themes/reservation/js/bookingbtn/jquery-ui.js type="text/javascript"></script>
+  <script src=https://live.ipms247.com/themes/reservation/js/bookingbtn/common.js type="text/javascript"></script>
+  <script src=https://live.ipms247.com/themes/reservation/js/bookingbtn/resui_resbookingbox.js type="text/javascript"></script>
+  <title>Document</title>
+</head>
+
+<style>
+  .form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .input1_wrapper {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  #bb_resBookingBox label {
+    font-size: 17px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .form-container {
+      flex-direction: column;
+    }
+
+    .input1_wrapper {
+      flex-basis: 100%;
+    }
+  }
+</style>
+
+
+
+<body>
+  <form name="_resBBBox" action="https://live.ipms247.com/booking/book-rooms-pemakothimphu" target="_blank" method="post">
+    <div class="bb_resbox" id="bb_resBookingBox" ></div>
+  </form>
+
+  <script>
+    jQuery("#bb_resBookingBox").bb_resBookingBox({
+      
+      btnContainer: "bb_resBookingBox",
+      headerColor: "#aa8453",
+      bodyColor: "#D3D3D3",
+      showborder: true,
+      BorderColor: "#D3D3D3",
+      BorderWidth: 1,
+      BorderType: "solid",
+      FontFamily: "Cormorant, Helvetica, sans-serif",
+      BodyLanguage: "en",
+      FontSize: "18",
+      TextColor: "#0a635f",
+      InputBorderColor: "#D3D3D3",
+      InputbackColor: "#FFFFFF",
+      InputTextColor: "#17a690",
+      BackgroundColor:"#FFFF",
+      ButnBackColor: "#FFFFFF",
+      ButnBorderColor: "#FFFFFF",
+      ButnTextColor: "#000000",
+      HeaderTextColor: "#000000",
+      HeaderFontSize: "24",
+      ShowHeader: "1",
+      boxwidth: "750",
+      boxwidthtype: "TYPE_PX",
+      ShowInlineCSS: "1",
+      type: "vtype",
+      acr: true,
+      ShowChild: true,
+      rooms: false,
+      promotion: true,
+      defaultadult: 10,
+      defaultchild: 10,
+      defaultroom: 16,
+      ShowNights: false,
+      Nonights: 15,
+      HTextCaption: "Reservation",
+      BtnTextCaption: "Book Now",
+      LblPromoCaption: "",
+      LblChkOutCaption: "Check Out",
+      Calinit: true,
+      CalShowOn: "both",
+      CalDefaultDt: "+0w",
+      // CalDefaultDt: "15-07-2023",
+      CalChangeMonth: true,
+      CalMinDate: "0",
+      CalMaxDate: "",
+      CalDtFormat: "dd-mm-yy",
+      CalCutoffDays: "1",
+      CalImage: ".0625rem -21.625rem",
+      CalBackColor: "#a0f2ea",
+      CalHeaderColor: "#d5f2f1",
+      CalCellActiveColor: "#101414",
+      CalCellInActiveColor: "#c8dbda",
+      LblArrivalCaption: "Arrival",
+      LblNightsCaption: "Nights",
+      LblAdultsCaption: "Adult",
+      LblChildsCaption: "Child",
+      LblRoomsCaption: "Rooms",
+      LblPerRoomCaption: "Per Room",
+      HotelId: "pemakothimphu",
+    });
+  </script>
+</body>
+
+</html>
